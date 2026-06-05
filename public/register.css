@@ -41,3 +41,6 @@
     flex-direction: column;
     gap: 20px;
 }
+.name{
+    line-height: 1px;
+}
