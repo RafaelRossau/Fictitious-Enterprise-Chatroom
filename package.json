@@ -9,9 +9,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^5.2.1",
     "mysql2": "^3.22.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelRossau/Fictitious-Enterprise-Chatroom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RafaelRossau/Fictitious-Enterprise-Chatroom/issues"
+  },
+  "homepage": "https://github.com/RafaelRossau/Fictitious-Enterprise-Chatroom#readme",
+  "description": ""
 }

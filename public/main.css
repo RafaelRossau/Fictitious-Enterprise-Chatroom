@@ -1,0 +1,48 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+#logo{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.x{
+    line-height: 1px;
+}
+.z{
+    color: green;
+}
+.logo{
+    background-color: rgb(245, 241, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    color: green;
+}
+#user{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+#user > i{
+    height: 30px;
+}
+.pfp{
+    background-color: rgb(245, 241, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+.name{
+    line-height: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
