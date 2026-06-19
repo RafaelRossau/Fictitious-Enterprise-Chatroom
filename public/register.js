@@ -16,7 +16,6 @@ async function register(){
             console.log(email_match)
         }
     })
-    //let employees = fetch(`http://localhost:3000/employees`); (e) => {e.employee_email}
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     console.log('Olá!')
     if (!emailRegex.test(email)) {
