@@ -1,3 +1,4 @@
+loggedIn_verification()
 async function register(){
     const email = document.getElementById('email').value
     const name = document.getElementById('name').value
@@ -43,4 +44,15 @@ async function register(){
             body: JSON.stringify({email, name, password}),
             });
     }
+}
+async function loggedIn_verification(){
+    await fetch(`http://localhost:3000/logged_in`)
+    .then((response) => {
+      return response.json();
+    })
+    .then((e) => {
+        if(e.length > 0){
+            window.location.href = 'main.html'
+        }
+    })
 }
