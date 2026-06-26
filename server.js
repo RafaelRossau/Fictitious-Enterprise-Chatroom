@@ -33,7 +33,12 @@ app.get("/logged_in", (req, res) => {
     res.json(results);
   });
 });
-
+app.get("/messages", (req, res) => {
+  db.query("SELECT * FROM messages", (err, results) => {
+    if (err) throw err;
+    res.json(results);
+  });
+});
 app.post("/employees", (req, res) => {
   const {email, name, password} = req.body;
   db.query(
@@ -54,6 +59,17 @@ app.post("/logged_in", (req, res) => {
     (err, result) => {
       if (err) throw err;
       res.json({ message: "Login was a success!" });
+    }
+  );
+});
+app.post("/messages", (req, res) => {
+  const {sender_name, sender_email, message} = req.body;
+  db.query(
+    "INSERT INTO messages (sender_name, sender_email, message) VALUES (?, ?, ?)",
+    [sender_name, sender_email, message], 
+    (err, result) => {
+      if (err) throw err;
+      res.json({ message: "Message creation was a success!" });
     }
   );
 });

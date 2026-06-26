@@ -53,9 +53,10 @@
             <div class="col-3"></div>
             <div class="col-6">
                 <div class="input-group input-group-lg">
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="What's up? ...">
-                    <button type="button" class="btn btn-success">Send</button>
+                    <input id="message" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="What's up? ...">
+                    <button onclick="sendMessage()" type="button" class="btn btn-success">Send</button>
                 </div>
+                <div id="chatroom"></div>
             </div>
             <div class="col-3"></div>
         </div>
